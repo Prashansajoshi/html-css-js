@@ -1,0 +1,47 @@
+header,
+footer{
+  margin: 15px ;
+  padding: 20px 30px;
+  background-color: aquamarine;
+  text-align: center;
+  border-radius: 6%;
+}
+
+.row{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+nav{
+  margin: 15px;
+  padding: 10px 20px;
+  background-color: blueviolet;
+  text-align: center;
+  font-size: medium;
+  color: black;
+}
+
+.column{
+  margin: 15px;
+  padding: 10px 20px;
+  text-align: center;
+  font-size: medium;
+  background-color: brown;
+  color: white;
+}
+
+aside{
+  margin: 15px;
+  padding: 10px 20px;
+  background-color: yellowgreen;
+  color: aqua;
+  text-align: center;
+  font-size: medium;
+  font: italic;
+}
+
+a:hover{
+  color: red;
+}

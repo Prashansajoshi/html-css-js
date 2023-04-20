@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <div class="course-data">
+        <h1><strong>Course Title:</strong> Web Technology</h1>
+        <dl>
+            <dt>Course Overview</dt>
+            <dd>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque dolore iste perferendis natus libero nostrum quae, dignissimos, et, sed maiores officiis. Doloribus necessitatibus sit assumenda! Saepe laboriosam voluptatem eaque earum.</p>
+                <p>Recusandae quae vel earum ullam! Cumque sit ipsa quae aspernatur provident possimus id, autem architecto. Laborum necessitatibus minima cumque quidem. Nulla tenetur architecto ipsum provident harum dicta tempora distinctio exercitationem.</p>
+            </dd>
+            <dt>Pre-requisites</dt>
+            <dd>
+                <p>Required Basic Pre-requisites are as follows:</p>
+                <ol>
+                    <li>Dedicated Time</li>
+                    <li>Own Laptop</li>
+                    <li>Practicl Laboratory</li>
+                    <li>Facilitator</li>
+                    <li>Internet</li>
+                </ol>
+            </dd>
+            <dt>Syllabus</dt>
+            <dd>
+                <h3>Course Content</h3>
+                <ul>
+                    <li>Overview</li>
+                    <li>Web Trends</li>
+                    <li>HTML in detail</li>
+                    <li>CSS2 and CSS3</li>
+                    <li>JavaScript and jQuery</li>
+                    <li>Ajax</li>
+                    <li>Git usecase</li>
+                    <li>Domain and it's registration process</li>
+                    <li>Website Hosting</li>
+                </ul> 
+                <table border="1" width="100%" cellpadding="0" cellspacing="0">
+                    <thead bgcolor="#F2F2F2" align="left">
+                        <tr>
+                            <th>S.N</th>
+                            <th>Desc.</th>
+                            <th>Remarks</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td valign="top">1.</td>
+                            <td>HTML4 <br/>vs.<br/> HTML5</td>
+                            <td rowspan="5"></td>
+                        </tr>
+                        <tr>
+                             <td>2.</td>
+                             <td>Web Trends</td>
+                         </tr>
+                         <tr>
+                             <td>3.</td>
+                             <td>CSS2 vs CSS3</td>
+                         </tr>
+                         <tr>
+                             <td>4.</td>
+                             <td>JS vs ES vs TS & Ajax</td>
+                         </tr>
+                         <tr>
+                             <td>5.</td>
+                             <td>API and It's Architecture</td>
+                         </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                         <th>S.N</th>
+                         <th>Desc.</th>
+                         <th>Remarks</th>
+                        </tr>
+                    </tfoot>
+                </table>
+             </dd>
+             <dt>Enroll Now</dt>
+             <dd>
+                 <p><span>*</span>All fields are mendatory!</p>
+                 <form action="#" method="POST" name="enroll_form" enctype="multipart/form-data">
+                     <ul>
+                        <li>
+                            <label for="fname">First Name:</label><br>
+                            <input type="text" id="fname" name="fname" placeholder="eg:Prashansa"><br><br>
+                        </li>
+                        <li>
+                            <label for="lname">Last Name:</label><br>
+                            <input type="text" id="lname" name="lname" placeholder="Joshi"><br><br>
+                        </li>
+                        <li>
+                            <label for="Address">Address:</label><br>
+                            <input type="text" id="Address" name="Address" value=""><br><br>
+                        </li>
+                        <li>
+                            <label for="Phone">Phone Number:</label><br>
+                            <input type="Phone" id="Phone" name="Phone" placeholder="9865982996"><br><br>
+                        </li>
+                        <li>
+                            <label for="DOB">Date Of Birth:</label><br>
+                            <input type="date" id="DOB" name="DOB"><br><br>
+                        </li>
+                        <li>
+                            <h4>Gender</h4>
+                            <div class="field-group">
+                                <label for="Male">Male</label>
+                                <input type="radio" name="Gender" id="Male" value="Male">
+                            </div>
+
+                            <div class="field-group">
+                                <label for="Female">Female</label>
+                                <input type="radio" name="Gender" id="Female" value="Female">
+                            </div>
+
+                            <div class="field-group">
+                                <label for="Other">Other</label>
+                                <input type="radio" name="Gender" id="Other" value="Other">
+                            </div>
+                        </li>
+                        <li>
+                            <h4>Packages</h4>
+                            <div class="field-group">
+                                <input type="checkbox" name="package" id="basic" value="Basic Package" />
+                                <label for="basic">Basic Package</label>
+                            </div>
+                            <div class="field-group">
+                                <input type="checkbox" name="package" id="advanced" value="Adavnced Package" />
+                                <label for="advanced">Advanced</label>
+                            </div>
+                            <div class="field-group">
+                                <input type="checkbox" name="package" id="combo" value="Combo Package" />
+                                <label for="combo">Combo</label><br>
+                            </div>
+                        </li>
+                        <li>
+                            <label for="city">City</label>
+                            <input type="text" name="city" id="city" value=""/>
+                        </li>
+                        <li>
+                           <label for="country">Country</label>
+                           <select name="country" id="country">
+                            <option value="">Choose Country</option>
+                            <option value="NP">Nepal</option>
+                            <option value="JP">Japan</option>
+                            <option value="CH">China</option>
+                            <option value="UK">United Kingdom</option>
+                            <option value="IN">India</option>
+                           </select>
+                        </li> 
+                        <li>
+                            <label for="message">Message</label>
+                            <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                        </li>                       
+                    </ul>
+                    <div class="form-footer">
+                        <input type="submit" name="submit" value="Enroll Now">
+                        <button type="submit" name="submit">Enroll Now</button>
+                    </div>
+                </form>
+            </dd>
+        </dl>
+    </div>
+</body>
+</html>
+</body>
+</html>

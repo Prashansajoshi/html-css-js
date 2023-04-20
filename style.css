@@ -1,0 +1,108 @@
+header{
+    color: blueviolet;
+    margin: 10px;
+    padding: 20px 50px;
+    font-size: 2em;
+}
+
+header span{
+    color: chartreuse;
+}
+
+nav{
+    font-size: 1em;
+    margin: 5px 0px;
+    padding: 20px 50px;
+    display: inline;
+}
+
+nav li{
+    margin: 0px 5px;
+    display: inline;
+}
+
+nav li:first-child{
+    margin-left: 0px;
+}
+
+nav span, nav a{
+    padding: 3px 15px 4px;
+}
+
+nav span{
+    background-color: brown;
+    color: aquamarine;
+}
+
+section{
+    padding: 5px 10px;
+    margin: 5px 0px;
+    position: relative;
+    width: 60%;
+}
+
+section article{
+    margin: 10px 5px;
+    padding: 5px 10px;
+}
+
+section header{
+    font-size: 1em;
+    color: coral;
+}
+
+section figure{
+    padding: 10px;
+}
+
+figcaption{
+    font-style: italic;
+    font: size 0.5em; ;
+}
+
+aside{
+    float: right;
+    padding: 70px 0px 30px;
+    position: relative;
+    width: 25%;
+}
+
+aside h3{
+    color: aquamarine;
+    font-size: 0.8em;
+}
+
+aside.tag-cloud{
+    padding: 15px 35px 10px 0px;
+}
+
+header, footer, section, article, aside {
+    margin: 10px;
+    background: green;
+    border-radius: 6px;
+    color: white;
+    font: 14px/24px "Lucida Console";
+    padding: 24px 15px;
+    box-shadow: -1px 2px 5px 1px rgba(0, 0, 0, 0.7);
+    display:block;
+  }
+  
+  #michelBuffa {
+    float: right;
+    margin-left:10px;
+  }
+  
+  header, footer {
+    text-align:center;
+    clear: both;
+  }
+  
+  section {
+    float: left;
+    width: 60%;
+  }
+  
+  aside {
+    float: right;
+    width: 25%;
+  }

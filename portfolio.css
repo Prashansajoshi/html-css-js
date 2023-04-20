@@ -1,0 +1,59 @@
+header{
+    margin: 20px;
+    padding: 20px;
+    background-color: rgb(17, 20, 19);
+    color: #fafafa;
+    text-align: center;
+}
+
+.navbar{
+    overflow: hidden;
+    background-color: #333;
+    margin: 20px;
+}
+
+.navbar a{
+    float: left;
+    display: block;
+    color: #fafafa;
+    text-align: center;
+    padding: 20px;
+
+}
+
+.navbar a:hover{
+    background-color: #ddd; 
+    color: black;
+}
+
+.row{
+    display: flex;
+    flex-wrap: nowrap
+}
+
+.aside{
+    flex: 30%;
+    background-color: brown;
+    padding: 20px;
+    margin: 20px;
+}
+
+.main{
+    flex: 70%;
+    background-color: antiquewhite;
+    padding: 20px;
+    margin: 20px;
+}
+
+img{
+    width: 80%;
+    padding: 20px;
+    background-color: #333;
+}
+
+.footer{
+    text-align: center;
+    background-color: gray;
+    padding: 20px;
+    margin: 20px;
+}

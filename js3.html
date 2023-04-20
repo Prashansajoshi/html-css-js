@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        function myfunction() {
+            document.getElementById("demo").innerHTML="Paragraph Changed";
+        }
+    </script>
+</head>
+<body>
+    <h1>Java Script in body</h1>
+    <p id="demo">Hello JS</p>
+
+    <button type="button" onclick="myfunction()">Click Here</button>
+
+    <p id="demo1"></p>
+    <script>
+       console.log(2 + 3);
+    </script><br><br>
+
+    <button type="button" onclick="window.print()">print this page</button>
+
+    <script>
+        let a , b, c;
+        a = 5;
+        b = 5;
+        c = a + b;
+        document.getElementById("demo1").innerHTML=c;
+    </script>
+
+    <script>
+        var x = myfunction(4,4);
+        document.getElementById("demo1").innerHTML= x;
+
+        function myfunction(a,b){
+            return a * b;
+        }
+    </script>
+
+<button onclick="displayDate()">The time is?</button>
+
+<script>
+function displayDate() {
+  document.getElementById("demo1").innerHTML = Date();
+}
+</script>
+
+
+</body>
+</html>

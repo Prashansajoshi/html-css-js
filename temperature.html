@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Conversion</title>
+</head>
+
+<body>
+    <section id="home">
+        <header><b>Temperature Conversion</b></header>
+        <br>
+
+        <nav>
+            <a href="#temperature"><button>Temperature</button></a>
+            <a href="#weight"><button>Weight</button></a>
+            <a href="#distance"><button>Distance</button></a>
+        </nav>
+
+        <p>
+            <label for="">Celcius:</label> 
+            <input type="number" id="inputcelcius" oninput="temperatureconverter(this.value)"
+                onchange="temperatureconverter(this.value)"><br>
+        </p>
+
+        <p> Fahrenheit: <span id="outputfahrenheit"></span></p>
+
+        <script>
+            function temperatureconverter(valNum)
+            {
+                valNum=parseFloat(valNum);
+                document.getElementById("outfahrenheit").innerHTML=(valNum*1.8)+32;
+            }
+        </script>
+</body>
+
+</html>

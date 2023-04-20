@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Playing</title>
+
+    <link rel="stylesheet" href="video.css">
+</head>
+
+<body>
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/WMFXg-kni0U" title="YouTube video player"
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+
+        <track src="https://www.youtube.com/embed/WMFXg-kni0U" kind="captions" label="Closed Captions" default>
+
+
+     <figure id="figaudio1">
+        <img src="image.jpg" alt="">
+
+        <figcaption id="figcaptionaudio1"> Press Play to hear the horse!
+
+            <audio controls="controls">
+                <source src="https://mainline.i3s.unice.fr/mooc/horse.ogg" type="audio/ogg" />
+                <source src="https://mainline.i3s.unice.fr/mooc/horse.mp3" type="audio/mp3" />
+                Your browser does not support the audio element.
+                Download the audio/video in
+                <a href="https://mainline.i3s.unice.fr/mooc/horse.ogg">OGG</a>
+                or <a href="https://mainline.i3s.unice.fr/mooc/horse.mp3">MP3</a>
+                format.
+            </audio>
+
+        </figcaption>
+    </figure>
+
+    <p>Example of custom control</p>
+    <button onclick="playvideo()"; style="cursor: pointer;">Play</button>
+    <button onclick="pausevideo()"; style="cursor: pointer;">Pause</button>
+    <button onclick="rewindvideo()"; style="cursor: pointer;">Rewind</button>
+
+    <script>
+         vid = document.querySelector("#vid");
+
+         function playvideo() {
+            vid.play();
+         }
+
+         function pausevideo() {
+            vid.pause();
+         }
+
+         function rewindvideo() {
+            vid.currentTime= 0 ;
+         }
+    </script>
+
+</body>
+
+</html>
